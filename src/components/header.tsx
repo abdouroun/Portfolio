@@ -48,7 +48,16 @@ export function Header() {
             </a>
             <div className="wrap nav">
                 <a className="mark" href="#" aria-label="Abdelmouhaimine Roun home">
-                    AR<span>.</span>
+                    <span className="mark-bracket" aria-hidden="true">
+                        &lt;
+                    </span>
+                    <span className="mark-name">
+                        <span className="mark-firstname">Abdelmouhaimine</span>
+                        <strong>Roun</strong>
+                    </span>
+                    <span className="mark-bracket mark-close" aria-hidden="true">
+                        /&gt;
+                    </span>
                 </a>
                 <button
                     id="menu-toggle"

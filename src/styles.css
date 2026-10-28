@@ -57,15 +57,6 @@ header {
     align-items: center;
     justify-content: space-between;
 }
-.mark {
-    font:
-        800 25px 'Manrope',
-        sans-serif;
-    letter-spacing: -2px;
-}
-.mark span {
-    color: var(--green);
-}
 nav {
     display: flex;
     gap: 32px;
@@ -809,7 +800,10 @@ nav a {
         transform: translateY(0);
     }
 }
-@media (max-width: 650px) {
+@media (max-width: 780px) {
+    .nav {
+        height: 72px;
+    }
     .menu-toggle {
         display: block;
         border: 1px solid var(--line);
@@ -884,22 +878,6 @@ nav a {
     }
 }
 
-/* Tile direction 02: compact initials for navigation and app icons. */
-.mark {
-    display: grid;
-    place-items: center;
-    width: 48px;
-    height: 48px;
-    border-radius: 12px;
-    background: var(--green);
-    color: var(--lime);
-    font-family: Arial, sans-serif;
-    font-size: 25px;
-    font-weight: 600;
-    letter-spacing: -2px;
-    line-height: 1;
-    padding-right: 2px;
-}
 .contribution-details {
     margin-top: 20px;
     font-size: 13px;
@@ -1175,19 +1153,56 @@ nav {
     }
 }
 
-.mark span {
-    display: inline;
-    margin-left: 1px;
-    background: linear-gradient(135deg, #83ce91 10%, #effbc3 90%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-}
+/* Personal code mark: a readable name framed by code punctuation. */
 .mark {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    letter-spacing: -1.7px;
-    padding: 0 2px 0 0;
+    gap: 9px;
+    flex-shrink: 0;
+    color: #171d19;
+    text-decoration: none;
+}
+.mark-bracket {
+    font-family: monospace;
+    font-size: 39px;
+    font-weight: 400;
+    letter-spacing: -6px;
+    line-height: 1;
+    color: var(--green);
+}
+.mark-close {
+    margin-left: -3px;
+    padding-right: 5px;
+}
+.mark-name {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    line-height: 1.15;
+}
+.mark-firstname {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.3px;
+}
+.mark-name strong {
+    font-family: Manrope, sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: -0.6px;
+}
+@media (max-width: 780px) {
+    .mark {
+        gap: 7px;
+    }
+    .mark-bracket {
+        font-size: 34px;
+    }
+    .mark-firstname {
+        font-size: 12px;
+    }
+    .mark-name strong {
+        font-size: 18px;
+    }
 }
