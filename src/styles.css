@@ -884,17 +884,21 @@ nav a {
     }
 }
 
-/* Wordmark direction 01: bold initials and a green full stop. */
+/* Tile direction 02: compact initials for navigation and app icons. */
 .mark {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: var(--green);
+    color: var(--lime);
     font-family: Arial, sans-serif;
-    font-size: 34px;
-    font-weight: 700;
-    letter-spacing: -2.4px;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: -2px;
     line-height: 1;
-    padding: 6px 5px;
-}
-.mark span {
-    margin-left: 1px;
+    padding-right: 2px;
 }
 .contribution-details {
     margin-top: 20px;
@@ -1169,4 +1173,21 @@ nav {
         margin-top: 0;
         padding-top: 45px;
     }
+}
+
+.mark span {
+    display: inline;
+    margin-left: 1px;
+    background: linear-gradient(135deg, #83ce91 10%, #effbc3 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    letter-spacing: -1.7px;
+    padding: 0 2px 0 0;
 }
