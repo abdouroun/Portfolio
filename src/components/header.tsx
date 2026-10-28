@@ -48,16 +48,7 @@ export function Header() {
             </a>
             <div className="wrap nav">
                 <a className="mark" href="#" aria-label="Abdelmouhaimine Roun home">
-                    <span className="mark-bracket" aria-hidden="true">
-                        &lt;
-                    </span>
-                    <span className="mark-name">
-                        <span className="mark-firstname">Abdelmouhaimine</span>
-                        <strong>Roun</strong>
-                    </span>
-                    <span className="mark-bracket mark-close" aria-hidden="true">
-                        /&gt;
-                    </span>
+                    <img src="/ar-original.svg" alt="" width="64" height="64" />
                 </a>
                 <button
                     id="menu-toggle"

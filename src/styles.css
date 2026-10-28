@@ -1153,56 +1153,21 @@ nav {
     }
 }
 
-/* Personal code mark: a readable name framed by code punctuation. */
+/* Original approved AR monogram, shared by the header and browser tab. */
 .mark {
     display: inline-flex;
     align-items: center;
-    gap: 9px;
     flex-shrink: 0;
-    color: #171d19;
-    text-decoration: none;
 }
-.mark-bracket {
-    font-family: monospace;
-    font-size: 39px;
-    font-weight: 400;
-    letter-spacing: -6px;
-    line-height: 1;
-    color: var(--green);
-}
-.mark-close {
-    margin-left: -3px;
-    padding-right: 5px;
-}
-.mark-name {
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
-    line-height: 1.15;
-}
-.mark-firstname {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: -0.3px;
-}
-.mark-name strong {
-    font-family: Manrope, sans-serif;
-    font-size: 20px;
-    font-weight: 800;
-    letter-spacing: -0.6px;
+.mark img {
+    display: block;
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
 }
 @media (max-width: 780px) {
-    .mark {
-        gap: 7px;
-    }
-    .mark-bracket {
-        font-size: 34px;
-    }
-    .mark-firstname {
-        font-size: 12px;
-    }
-    .mark-name strong {
-        font-size: 18px;
+    .mark img {
+        width: 54px;
+        height: 54px;
     }
 }
