@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 
 const navigation = [
-    { id: 'work', label: 'Selected work' },
+    { id: 'work', label: 'Work' },
     { id: 'experience', label: 'Experience' },
-    { id: 'about', label: 'About' },
+    { id: 'expertise', label: 'Expertise' },
     { id: 'education', label: 'Education' },
 ];
 

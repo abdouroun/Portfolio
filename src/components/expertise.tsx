@@ -1,10 +1,12 @@
-export function About() {
+import { Approach } from './approach';
+
+export function Expertise() {
     return (
-        <section id="about">
+        <section id="expertise" aria-labelledby="expertise-title">
             <div className="about-grid">
                 <div>
-                    <div className="kicker">03 — HOW I WORK</div>
-                    <h2>
+                    <div className="kicker">03 — EXPERTISE & APPROACH</div>
+                    <h2 id="expertise-title">
                         Care for the code.
                         <br />
                         Care for the people.
@@ -57,6 +59,7 @@ export function About() {
                     </div>
                 </div>
             </div>
+            <Approach />
         </section>
     );
 }

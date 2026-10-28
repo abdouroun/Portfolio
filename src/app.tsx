@@ -2,9 +2,8 @@ import { Header } from './components/header';
 import { Hero } from './components/hero';
 import { SelectedWork } from './components/selected_work';
 import { Experience } from './components/experience';
-import { About } from './components/about';
+import { Expertise } from './components/expertise';
 import { Learning } from './components/learning';
-import { Approach } from './components/approach';
 import { Contact } from './components/contact';
 import { Footer } from './components/footer';
 import { useReveal } from './hooks/use_reveal';
@@ -19,9 +18,8 @@ export default function App() {
                 <div className="wrap">
                     <SelectedWork />
                     <Experience />
-                    <About />
+                    <Expertise />
                     <Learning />
-                    <Approach />
                     <Contact />
                     <Footer />
                 </div>

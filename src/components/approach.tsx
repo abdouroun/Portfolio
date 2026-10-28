@@ -18,11 +18,11 @@ const principles = [
 
 export function Approach() {
     return (
-        <section id="approach" aria-labelledby="approach-title">
+        <div className="expertise-approach" id="approach" aria-labelledby="approach-title">
             <div className="section-head">
                 <div>
-                    <div className="kicker">04 — MY APPROACH</div>
-                    <h2 id="approach-title">Good software is a team effort.</h2>
+                    <div className="kicker">MY APPROACH</div>
+                    <h3 id="approach-title">Good software is a team effort.</h3>
                 </div>
                 <p>
                     A practical approach shaped by frontend architecture and technical leadership.
@@ -32,11 +32,11 @@ export function Approach() {
                 {principles.map(({ number, title, text }) => (
                     <article className="principle" key={number}>
                         <span className="principle-number">{number} /</span>
-                        <h3>{title}</h3>
+                        <h4>{title}</h4>
                         <p>{text}</p>
                     </article>
                 ))}
             </div>
-        </section>
+        </div>
     );
 }

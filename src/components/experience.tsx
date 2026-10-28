@@ -3,7 +3,7 @@ export function Experience() {
         <section id="experience">
             <div className="section-head">
                 <div>
-                    <div className="kicker">02 — THE JOURNEY</div>
+                    <div className="kicker">02 — PROFESSIONAL JOURNEY</div>
                     <h2>Built on experience.</h2>
                 </div>
                 <p>

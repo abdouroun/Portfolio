@@ -780,7 +780,7 @@ nav a {
     color: var(--green);
     font: 12px monospace;
 }
-.principle h3 {
+.principle h4 {
     font:
         600 19px Manrope,
         sans-serif;
@@ -848,7 +848,7 @@ nav a {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    .principle h3 {
+    .principle h4 {
         margin-top: 18px;
     }
     .hero h1 {
@@ -1169,5 +1169,23 @@ nav {
     .mark img {
         width: 54px;
         height: 54px;
+    }
+}
+
+.expertise-approach {
+    margin-top: 55px;
+    padding-top: 40px;
+    border-top: 1px solid var(--line);
+}
+.expertise-approach .section-head h3 {
+    font:
+        500 clamp(28px, 3.2vw, 38px)/1.2 Manrope,
+        sans-serif;
+    letter-spacing: -1.4px;
+}
+@media (max-width: 650px) {
+    .expertise-approach {
+        margin-top: 35px;
+        padding-top: 30px;
     }
 }

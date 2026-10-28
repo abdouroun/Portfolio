@@ -9,7 +9,7 @@ export function Learning() {
         <section id="education" className="learning" aria-labelledby="learning-title">
             <div className="section-head">
                 <div>
-                    <div className="kicker">EDUCATION & CERTIFICATIONS</div>
+                    <div className="kicker">04 — EDUCATION & CERTIFICATIONS</div>
                     <h2 id="learning-title" className="learning-title">
                         Engineering foundation.
                         <br />
