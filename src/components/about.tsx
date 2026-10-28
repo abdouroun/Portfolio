@@ -1,0 +1,75 @@
+export function About() {
+    return (
+        <section id="about">
+            <div className="about-grid">
+                <div>
+                    <div className="kicker">03 — HOW I WORK</div>
+                    <h2>
+                        Care for the code.
+                        <br />
+                        Care for the people.
+                    </h2>
+                    <div className="about-copy">
+                        <p>
+                            My work sits at the intersection of frontend craft, backend systems, and
+                            team collaboration. I look for the reusable foundation behind a complex
+                            problem—and the clear experience it can create.
+                        </p>
+                        <p>
+                            From Morocco to Québec, I’ve worked with developers, architects, product
+                            teams, and clients to turn business needs into software people can rely
+                            on.
+                        </p>
+                    </div>
+                    <div className="education">
+                        <strong>Engineering foundation. Continuous learning.</strong>Bachelor’s
+                        degree in Network &amp; Information Systems Engineering · 2019
+                        <br />
+                        DUT in Computer Science · 2016
+                        <br />
+                        <br />
+                        SAFe® 6 Practitioner · Google AI Essentials · Google AI Professional
+                        Certificate
+                        <br />
+                        <br />
+                        French: bilingual · English: professional · Arabic: native
+                    </div>
+                </div>
+                <div>
+                    <div className="skill-group">
+                        <h3>01 / Interfaces</h3>
+                        <p>
+                            React · TypeScript · JavaScript · Redux · Gatsby · Vite · Responsive
+                            design
+                        </p>
+                    </div>
+                    <div className="skill-group">
+                        <h3>02 / Systems &amp; integrations</h3>
+                        <p>
+                            Node.js · Express · Symfony / PHP · REST APIs · GraphQL · SQL · RabbitMQ
+                            · Strapi
+                        </p>
+                    </div>
+                    <div className="skill-group">
+                        <h3>03 / Cloud &amp; delivery</h3>
+                        <p>Microsoft Azure · AWS · Docker · CI/CD · Azure DevOps · Git</p>
+                    </div>
+                    <div className="skill-group">
+                        <h3>04 / Engineering practice</h3>
+                        <p>
+                            Reusable components · SOLID · Domain-driven design · Microservices ·
+                            Jest · PHPUnit · TDD · Code reviews
+                        </p>
+                    </div>
+                    <div className="skill-group">
+                        <h3>05 / Working together</h3>
+                        <p>
+                            Agile / Scrum · Mentorship · Stakeholder collaboration · AI-assisted
+                            development with systematic review and testing
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+}

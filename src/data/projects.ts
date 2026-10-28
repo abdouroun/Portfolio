@@ -1,0 +1,41 @@
+export const projects = [
+    {
+        id: 'citizen-services',
+        dark: false,
+        number: '01 / PUBLIC SERVICES',
+        headline: ['Better services.', 'Less friction.'],
+        caption: 'CITY OF LAVAL · MON DOSSIER',
+        role: 'CGI · Senior consultant · 2022–Present',
+        title: 'A reusable foundation for citizen services.',
+        description:
+            'Contributing to the City of Laval’s citizen platform, I refactored complex React forms into reusable modules and built a component library to make delivery faster and interfaces more consistent.',
+        tags: ['React', 'TypeScript', 'Redux', 'Azure', 'Component architecture'],
+        result: '4 weeks → 1 week',
+        resultDetail: ' to deliver new forms on a platform serving 200,000+ users.',
+        contributions: [
+            'Integrated and tested a secure municipal payment journey, including errors and response handling.',
+            'Mentored three junior developers and contributed to architecture decisions and code reviews.',
+            'Secured approval for a staff portal reusing citizen forms, with a projected 50% reduction in implementation time.',
+        ],
+    },
+    {
+        id: 'accounting-saas',
+        dark: true,
+        number: '02 / ACCOUNTING SAAS',
+        headline: ['Connected teams.', 'Clearer decisions.'],
+        caption: 'TAMTAM · DASHBOARD / POWERTEAM / DIRECTORY',
+        role: 'Tamtam International · 2019–2022',
+        title: 'From full stack development to team leadership.',
+        description:
+            'Built accounting dashboards, connected financial-data APIs, and contributed to capacity planning. As team lead, I coordinated delivery across three major initiatives for a SaaS platform serving 800+ Belgian accounting-firm clients.',
+        tags: ['React', 'Node.js', 'Express', 'Symfony', 'AWS', 'Multi-tenant SaaS'],
+        result: '7 developers led',
+        resultDetail: ' · 95% client satisfaction across the three initiatives.',
+        contributions: [
+            'Developed multi-tenant authorization and bidirectional REST API synchronization with Syneton.',
+            'Built interactive accounting dashboards adopted by more than 50 professional firms.',
+            'Contributed to PowerTeam, improving profitability forecast accuracy by 25%.',
+            'Recruited and trained 12 final-year interns; 10 transitioned into full-time roles.',
+        ],
+    },
+] as const;
