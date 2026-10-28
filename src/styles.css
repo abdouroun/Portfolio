@@ -884,14 +884,13 @@ nav a {
     }
 }
 
-/* A personal signature, kept as selectable text. */
+/* Wordmark direction 01: bold initials and a green full stop. */
 .mark {
-    font-family: 'Allura', 'Brush Script MT', cursive;
-    font-size: 44px;
-    font-weight: 400;
-    letter-spacing: -2px;
+    font-family: Arial, sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: -2.4px;
     line-height: 1;
-    transform: rotate(-7deg);
     padding: 6px 5px;
 }
 .mark span {
