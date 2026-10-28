@@ -1,5 +1,3 @@
-import { Learning } from './learning';
-
 export function About() {
     return (
         <section id="about">
@@ -59,7 +57,6 @@ export function About() {
                     </div>
                 </div>
             </div>
-            <Learning />
         </section>
     );
 }

@@ -1129,3 +1129,45 @@ nav a {
         transition: none;
     }
 }
+
+/* Disclosure triangles communicate expansion, rather than external navigation. */
+.contribution-toggle {
+    justify-content: flex-start;
+    gap: 7px;
+}
+.contribution-chevron {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    border: 0;
+    border-radius: 0;
+    font-size: 10px;
+    line-height: 1;
+    transition: transform 360ms ease;
+}
+.contribution-toggle:hover .contribution-chevron {
+    background: transparent;
+}
+.learning {
+    margin-top: 0;
+    border-top: 0;
+    padding-top: 65px;
+}
+nav {
+    gap: 25px;
+}
+@media (max-width: 750px) and (min-width: 651px) {
+    nav {
+        gap: 15px;
+        font-size: 12px;
+    }
+    .nav-contact {
+        padding: 9px 12px;
+    }
+}
+@media (max-width: 650px) {
+    .learning {
+        margin-top: 0;
+        padding-top: 45px;
+    }
+}

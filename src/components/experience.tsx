@@ -24,7 +24,7 @@ export function Experience() {
                         architecture, payment integration, and engineering mentorship.
                     </p>
                 </div>
-                <span className="company">CGI ↗</span>
+                <span className="company">CGI</span>
             </div>
             <div className="experience-row">
                 <div className="period">

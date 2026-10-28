@@ -20,10 +20,10 @@ export function ContributionDetails({ contributions }: ContributionDetailsProps)
                 aria-controls={panel_id}
                 onClick={() => set_is_open((previous) => !previous)}
             >
-                <span>Inside the contribution</span>
                 <span className="contribution-chevron" aria-hidden="true">
-                    ↗
+                    ▶
                 </span>
+                <span>Inside the contribution</span>
             </button>
             <div
                 id={panel_id}

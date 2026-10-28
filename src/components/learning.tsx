@@ -6,15 +6,15 @@ const certifications = [
 
 export function Learning() {
     return (
-        <div className="learning" aria-labelledby="learning-title">
+        <section id="education" className="learning" aria-labelledby="learning-title">
             <div className="section-head">
                 <div>
                     <div className="kicker">EDUCATION & CERTIFICATIONS</div>
-                    <h3 id="learning-title" className="learning-title">
+                    <h2 id="learning-title" className="learning-title">
                         Engineering foundation.
                         <br />
                         Continuous learning.
-                    </h3>
+                    </h2>
                 </div>
                 <p>A foundation in computer systems, with a continuing focus on AI and delivery.</p>
             </div>
@@ -22,7 +22,19 @@ export function Learning() {
                 <div className="learning-card">
                     <div className="learning-card-heading">
                         <span className="learning-icon" aria-hidden="true">
-                            ↗
+                            <svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="1.5"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            >
+                                <path d="m2 9 10-5 10 5-10 5-10-5Z" />
+                                <path d="M6 11v6c4 3 8 3 12 0v-6M22 9v7" />
+                            </svg>
                         </span>
                         <h4>Education</h4>
                     </div>
@@ -92,6 +104,6 @@ export function Learning() {
                     </li>
                 </ul>
             </div>
-        </div>
+        </section>
     );
 }

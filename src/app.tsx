@@ -3,6 +3,7 @@ import { Hero } from './components/hero';
 import { SelectedWork } from './components/selected_work';
 import { Experience } from './components/experience';
 import { About } from './components/about';
+import { Learning } from './components/learning';
 import { Approach } from './components/approach';
 import { Contact } from './components/contact';
 import { Footer } from './components/footer';
@@ -19,6 +20,7 @@ export default function App() {
                     <SelectedWork />
                     <Experience />
                     <About />
+                    <Learning />
                     <Approach />
                     <Contact />
                     <Footer />
