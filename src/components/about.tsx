@@ -1,3 +1,5 @@
+import { Learning } from './learning';
+
 export function About() {
     return (
         <section id="about">
@@ -20,19 +22,6 @@ export function About() {
                             teams, and clients to turn business needs into software people can rely
                             on.
                         </p>
-                    </div>
-                    <div className="education">
-                        <strong>Engineering foundation. Continuous learning.</strong>Bachelor’s
-                        degree in Network &amp; Information Systems Engineering · 2019
-                        <br />
-                        DUT in Computer Science · 2016
-                        <br />
-                        <br />
-                        SAFe® 6 Practitioner · Google AI Essentials · Google AI Professional
-                        Certificate
-                        <br />
-                        <br />
-                        French: bilingual · English: professional · Arabic: native
                     </div>
                 </div>
                 <div>
@@ -70,6 +59,7 @@ export function About() {
                     </div>
                 </div>
             </div>
+            <Learning />
         </section>
     );
 }

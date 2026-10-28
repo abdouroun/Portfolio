@@ -1,3 +1,4 @@
+import { ContributionDetails } from './contribution_details';
 import { projects } from '../data/projects';
 
 export function SelectedWork() {
@@ -45,14 +46,7 @@ export function SelectedWork() {
                             <strong>{project.result}</strong>
                             {project.resultDetail}
                         </div>
-                        <details>
-                            <summary>Inside the contribution</summary>
-                            <ul>
-                                {project.contributions.map((item) => (
-                                    <li key={item}>{item}</li>
-                                ))}
-                            </ul>
-                        </details>
+                        <ContributionDetails contributions={project.contributions} />
                     </div>
                 </article>
             ))}

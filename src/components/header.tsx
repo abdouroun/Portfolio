@@ -47,7 +47,7 @@ export function Header() {
             </a>
             <div className="wrap nav">
                 <a className="mark" href="#" aria-label="Abdelmouhaimine Roun home">
-                    ar<span>.</span>
+                    AR<span>.</span>
                 </a>
                 <button
                     id="menu-toggle"
