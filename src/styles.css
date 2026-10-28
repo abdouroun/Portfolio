@@ -40,7 +40,7 @@ summary:focus-visible {
 }
 .wrap {
     max-width: 1240px;
-    padding: 0 56px;
+    padding-inline: 56px;
     margin: auto;
 }
 header {
@@ -484,7 +484,7 @@ footer {
 }
 @media (max-width: 900px) {
     .wrap {
-        padding: 0 28px;
+        padding-inline: 28px;
     }
     .hero-grid {
         gap: 30px;
