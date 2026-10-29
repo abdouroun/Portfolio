@@ -1,6 +1,8 @@
 export const projects = [
     {
         id: 'citizen-services',
+        url: 'https://mondossier.laval.ca/',
+        linkLabel: 'mondossier.laval.ca',
         dark: false,
         number: '01 / PUBLIC SERVICES',
         headline: ['Better services.', 'Less friction.'],
@@ -20,6 +22,8 @@ export const projects = [
     },
     {
         id: 'accounting-saas',
+        url: 'https://tamtam.pro/',
+        linkLabel: 'tamtam.pro',
         dark: true,
         number: '02 / ACCOUNTING SAAS',
         headline: ['Connected teams.', 'Clearer decisions.'],

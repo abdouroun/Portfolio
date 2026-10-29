@@ -1675,3 +1675,213 @@ nav {
     white-space: nowrap;
     border: 0;
 }
+
+/* Illustrative project stories, rather than screenshots of client applications. */
+.project-art {
+    --art-panel: #f3f5ed;
+    --art-line: #a6b99c;
+    --art-ink: #255b46;
+    --art-accent: #dce9aa;
+}
+.project-art.dark {
+    --art-panel: #2c4539;
+    --art-line: #77917b;
+    --art-ink: #e2ebda;
+    --art-accent: #dce9aa;
+}
+.project-illustration {
+    margin: 20px -8px 14px;
+}
+.project-illustration svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
+.project-illustration svg text {
+    font: 7px monospace;
+    letter-spacing: 0.6px;
+    fill: var(--art-ink);
+}
+.project-illustration svg .form-field-label {
+    font:
+        8px 'DM Sans',
+        sans-serif;
+    letter-spacing: 0;
+}
+.project-illustration svg .form-submit {
+    fill: #f4f7ec;
+    font:
+        7px 'DM Sans',
+        sans-serif;
+    letter-spacing: 0;
+}
+.project-illustration svg .ledger-heading {
+    font-size: 6px;
+}
+.project-illustration-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 9px 0;
+    font: 8px monospace;
+    color: var(--art-ink);
+    opacity: 0.75;
+}
+.project-illustration-footer button {
+    border: 1px solid var(--art-line);
+    background: transparent;
+    color: inherit;
+    border-radius: 20px;
+    font: inherit;
+    padding: 3px 8px;
+    cursor: pointer;
+}
+.project-external-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 12px;
+    color: var(--green);
+    margin-top: 20px;
+    padding: 8px 0;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-color: #b4c6ac;
+}
+.project-external-link:hover {
+    text-decoration-color: var(--green);
+}
+.field-fill {
+    stroke-dasharray: 180;
+    stroke-dashoffset: 180;
+    animation: fill-form 8s ease infinite;
+}
+.field-two {
+    animation-delay: 1s;
+}
+.form-success {
+    transform-origin: 244px 175px;
+    animation: form-complete 8s ease infinite;
+}
+.citizen-connector {
+    animation: citizen-flow 8s linear infinite;
+}
+.finance-trend {
+    stroke-dasharray: 130;
+    stroke-dashoffset: 130;
+    animation: financial-trend 8s ease infinite;
+}
+.finance-bar {
+    transform-box: fill-box;
+    transform-origin: bottom;
+    animation: financial-bar 8s ease infinite;
+}
+.bar-1 {
+    animation-delay: 0.15s;
+}
+.bar-2 {
+    animation-delay: 0.3s;
+}
+.bar-3 {
+    animation-delay: 0.45s;
+}
+.bar-4 {
+    animation-delay: 0.6s;
+}
+.ledger-row {
+    animation: ledger-pulse 8s ease infinite;
+}
+.ledger-1 {
+    animation-delay: 0.3s;
+}
+.ledger-2 {
+    animation-delay: 0.6s;
+}
+.project-illustration[data-paused='true'] * {
+    animation-play-state: paused !important;
+}
+@keyframes fill-form {
+    0%,
+    10% {
+        stroke-dashoffset: 180;
+    }
+    35%,
+    85% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: 180;
+    }
+}
+@keyframes form-complete {
+    0%,
+    45%,
+    100% {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+    55%,
+    85% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes citizen-flow {
+    to {
+        stroke-dashoffset: -64;
+    }
+}
+@keyframes financial-trend {
+    0%,
+    10% {
+        stroke-dashoffset: 130;
+    }
+    55%,
+    85% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: 130;
+    }
+}
+@keyframes financial-bar {
+    0%,
+    100% {
+        transform: scaleY(0.25);
+    }
+    45%,
+    85% {
+        transform: scaleY(1);
+    }
+}
+@keyframes ledger-pulse {
+    0%,
+    100% {
+        opacity: 0.35;
+    }
+    45%,
+    85% {
+        opacity: 1;
+    }
+}
+@media (max-width: 650px) {
+    .project-illustration {
+        max-width: 310px;
+        width: 100%;
+        margin: 20px auto;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .project-illustration * {
+        animation: none !important;
+    }
+    .field-fill,
+    .finance-trend {
+        stroke-dashoffset: 0;
+    }
+    .form-success {
+        opacity: 1;
+        transform: none;
+    }
+}
