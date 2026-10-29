@@ -1610,3 +1610,36 @@ nav {
         letter-spacing: -1px;
     }
 }
+
+/* Direction 06: one compact wordmark, contrasting name weights and brand colors. */
+.hero h1.hero-name {
+    display: flex;
+    align-items: baseline;
+    gap: 0.3em;
+    white-space: nowrap;
+    font-size: clamp(24px, 3.6vw, 46px);
+    font-weight: 500;
+    letter-spacing: -1.25px;
+    line-height: 1.2;
+}
+.hero-name > span {
+    display: inline;
+}
+.hero-name .hero-surname {
+    font-size: 1em;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+}
+.hero-name .hero-surname::after {
+    content: none;
+}
+@media (max-width: 650px) {
+    .hero h1.hero-name {
+        font-size: clamp(18px, 6.2vw, 32px);
+        letter-spacing: -0.8px;
+        gap: 0.2em;
+    }
+    .hero-name .hero-surname {
+        letter-spacing: -1px;
+    }
+}
