@@ -48,7 +48,7 @@ export function Header() {
             </a>
             <div className="wrap nav">
                 <a className="mark" href="#" aria-label="Abdelmouhaimine Roun home">
-                    <img src="/ar-original.svg" alt="" width="64" height="64" />
+                    <img src="/ar-transparent.png" alt="" width="64" height="64" />
                 </a>
                 <button
                     id="menu-toggle"
