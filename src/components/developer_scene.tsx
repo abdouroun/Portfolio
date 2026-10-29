@@ -165,48 +165,13 @@ export function DeveloperScene() {
                         <g className="developer-face">
                             <path d="M148 193v14q7 7 15 0v-15Z" fill="#c99c7b" />
                             <path
-                                d="M139 166c0-12 8-17 18-17s17 8 17 19v24c-2 7-8 11-15 10-12-1-19-10-19-23Z"
+                                d="M139 166c0-12 8-17 18-17s17 8 17 19v11l3 6-4 2v6c-2 7-8 11-15 10-12-1-19-10-19-23Z"
                                 fill="#d7ad8b"
                             />
                             <path
-                                d="M136 179c-7-6-9-16-5-24 5-10 17-15 28-13 10 1 16 8 17 19-11-5-24-4-33 3l-2 15Z"
+                                d="M138 180c-7-5-8-16-3-24 4-8 12-12 21-11 12 0 20 7 20 18-6 0-10-3-13-7-5 7-13 10-22 10v14Z"
                                 fill="#243c2e"
                             />
-                            <defs>
-                                <linearGradient
-                                    id="developer-hair-fade"
-                                    x1="0"
-                                    y1="0"
-                                    x2="0"
-                                    y2="1"
-                                >
-                                    <stop stopColor="#243c2e" stopOpacity=".8" />
-                                    <stop offset="1" stopColor="#243c2e" stopOpacity=".1" />
-                                </linearGradient>
-                            </defs>
-                            <path d="M136 163q4-4 8-3l-2 18h-5Z" fill="url(#developer-hair-fade)" />
-                            <g
-                                fill="none"
-                                stroke="#50705a"
-                                strokeWidth=".8"
-                                strokeLinecap="round"
-                                opacity=".65"
-                            >
-                                <path d="M170 151q-21-11-34 5M168 155q-16-7-28 3M161 146q-17-4-25 6" />
-                            </g>
-                            <path
-                                d="M144 188q4 9 14 10 10 1 15-9v7q-6 9-15 7-11-1-14-15Z"
-                                fill="#344235"
-                                opacity=".18"
-                            />
-                            <g fill="#344235" opacity=".32">
-                                <circle cx="149" cy="194" r=".45" />
-                                <circle cx="153" cy="198" r=".45" />
-                                <circle cx="158" cy="200" r=".45" />
-                                <circle cx="163" cy="200" r=".45" />
-                                <circle cx="168" cy="197" r=".45" />
-                                <circle cx="171" cy="193" r=".45" />
-                            </g>
                             <ellipse cx="139" cy="182" rx="4" ry="5.5" fill="#d7ad8b" />
                             <path
                                 d="M138 181q3-2 3 3"
