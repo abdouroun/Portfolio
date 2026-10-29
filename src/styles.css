@@ -1579,3 +1579,34 @@ nav {
         animation: none;
     }
 }
+
+/* Echo the angular monogram through a geometric display face and its palette. */
+.hero h1.hero-name {
+    font-family: 'Syne', Manrope, sans-serif;
+    font-size: clamp(28px, 3.4vw, 46px);
+    font-weight: 600;
+    color: #255b46;
+    letter-spacing: -1.5px;
+    line-height: 1.15;
+}
+.hero-name .hero-surname {
+    font-weight: 800;
+    font-size: 1.65em;
+    color: #202923;
+    letter-spacing: -2.4px;
+}
+.hero-name .hero-surname::after {
+    content: '';
+    display: inline-block;
+    width: 0.2em;
+    height: 0.18em;
+    margin-left: 0.16em;
+    background: #dce9aa;
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+@media (max-width: 650px) {
+    .hero h1.hero-name {
+        font-size: clamp(24px, 7.2vw, 34px);
+        letter-spacing: -1px;
+    }
+}
