@@ -3,21 +3,22 @@ import { ArchitectureScene } from './architecture_scene';
 export function Hero() {
     return (
         <div className="wrap hero">
-            <div className="eyebrow">
-                <span className="dot"></span>Senior Full Stack Developer · Sherbrooke, Canada
-            </div>
             <div className="hero-grid">
                 <div>
-                    <h1>
-                        Software,
-                        <br />
-                        <em>thoughtfully</em>
-                        <br />
-                        built.
+                    <h1 className="hero-name">
+                        <span>Abdelmouhaimine </span>
+                        <span className="hero-surname">Roun</span>
                     </h1>
+                    <p className="eyebrow hero-role">
+                        <span className="dot" aria-hidden="true" />
+                        Senior Full Stack Developer · Sherbrooke, Canada
+                    </p>
+                    <p className="hero-signature">
+                        Software, <em>thoughtfully</em> built.
+                    </p>
                     <p className="intro">
-                        I’m <strong>Abdelmouhaimine Roun.</strong> I turn complex requirements into
-                        clear interfaces, reusable systems, and web platforms built to grow.
+                        I turn complex requirements into clear interfaces, reusable systems, and web
+                        platforms built to grow.
                     </p>
                     <div className="buttons">
                         <a className="button" href="#work">
