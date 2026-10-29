@@ -1,60 +1,50 @@
+import { useLanguage } from '../i18n/language';
 export function Experience() {
+    const { t } = useLanguage();
     return (
         <section id="experience">
             <div className="section-head">
                 <div>
-                    <div className="kicker">02 — PROFESSIONAL JOURNEY</div>
-                    <h2>Built on experience.</h2>
+                    <div className="kicker">{t('experience.02ProfessionalJourney')}</div>
+                    <h2>{t('experience.builtOnExperience')}</h2>
                 </div>
-                <p>
-                    Hands-on development, technical ownership, and helping others do their best
-                    work.
-                </p>
+                <p>{t('experience.handsOnDevelopmentTechnicalOwnershipAnd')}</p>
             </div>
             <div className="experience-row">
                 <div className="period">
-                    Sep 2022 — Present
+                    {t('experience.sep2022Present')}
                     <br />
-                    Sherbrooke, Canada
+                    {t('experience.sherbrookeCanada')}
                 </div>
                 <div>
-                    <h3>Senior React Frontend Developer</h3>
-                    <p>
-                        Senior consultant on the City of Laval’s Mon Dossier platform. Reusable UI
-                        architecture, payment integration, and engineering mentorship.
-                    </p>
+                    <h3>{t('experience.seniorReactFrontendDeveloper')}</h3>
+                    <p>{t('experience.seniorConsultantOnTheCityOf')}</p>
                 </div>
-                <span className="company">CGI</span>
+                <span className="company">{t('experience.cgi')}</span>
             </div>
             <div className="experience-row">
                 <div className="period">
-                    Jan 2021 — Aug 2022
+                    {t('experience.jan2021Aug2022')}
                     <br />
-                    Morocco
+                    {t('experience.morocco')}
                 </div>
                 <div>
-                    <h3>Team Lead</h3>
-                    <p>
-                        Led seven developers, aligned technical delivery with Belgian clients, and
-                        owned sprint planning, reviews, and production incident coordination.
-                    </p>
+                    <h3>{t('experience.teamLead')}</h3>
+                    <p>{t('experience.ledSevenDevelopersAlignedTechnicalDelivery')}</p>
                 </div>
-                <span className="company">Tamtam International</span>
+                <span className="company">{t('experience.tamtamInternational')}</span>
             </div>
             <div className="experience-row">
                 <div className="period">
-                    Feb 2019 — Dec 2020
+                    {t('experience.feb2019Dec2020')}
                     <br />
-                    Morocco
+                    {t('experience.morocco')}
                 </div>
                 <div>
-                    <h3>Full Stack Developer</h3>
-                    <p>
-                        Developed accounting dashboards and financial integrations, with unit and
-                        integration test coverage above 80% on targeted modules.
-                    </p>
+                    <h3>{t('experience.fullStackDeveloper')}</h3>
+                    <p>{t('experience.developedAccountingDashboardsAndFinancialIntegrations')}</p>
                 </div>
-                <span className="company">Tamtam International</span>
+                <span className="company">{t('experience.tamtamInternational')}</span>
             </div>
         </section>
     );

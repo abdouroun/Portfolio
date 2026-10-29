@@ -1,61 +1,42 @@
+import { useLanguage } from '../i18n/language';
 import { Approach } from './approach';
-
 export function Expertise() {
+    const { t } = useLanguage();
     return (
         <section id="expertise" aria-labelledby="expertise-title">
             <div className="about-grid">
                 <div>
-                    <div className="kicker">03 — EXPERTISE & APPROACH</div>
+                    <div className="kicker">{t('expertise.03ExpertiseApproach')}</div>
                     <h2 id="expertise-title">
-                        Care for the code.
+                        {t('expertise.careForTheCode')}
                         <br />
-                        Care for the people.
+                        {t('expertise.careForThePeople')}
                     </h2>
                     <div className="about-copy">
-                        <p>
-                            My work sits at the intersection of frontend craft, backend systems, and
-                            team collaboration. I look for the reusable foundation behind a complex
-                            problem—and the clear experience it can create.
-                        </p>
-                        <p>
-                            From Morocco to Québec, I’ve worked with developers, architects, product
-                            teams, and clients to turn business needs into software people can rely
-                            on.
-                        </p>
+                        <p>{t('expertise.myWorkSitsAtTheIntersection')}</p>
+                        <p>{t('expertise.fromMoroccoToQuBecI')}</p>
                     </div>
                 </div>
                 <div>
                     <div className="skill-group">
-                        <h3>01 / Interfaces</h3>
-                        <p>
-                            React · TypeScript · JavaScript · Redux · Gatsby · Vite · Responsive
-                            design
-                        </p>
+                        <h3>{t('expertise.01Interfaces')}</h3>
+                        <p>{t('expertise.reactTypescriptJavascriptReduxGatsbyVite')}</p>
                     </div>
                     <div className="skill-group">
-                        <h3>02 / Systems &amp; integrations</h3>
-                        <p>
-                            Node.js · Express · Symfony / PHP · REST APIs · GraphQL · SQL · RabbitMQ
-                            · Strapi
-                        </p>
+                        <h3>{t('expertise.02SystemsIntegrations')}</h3>
+                        <p>{t('expertise.nodeJsExpressSymfonyPhpRest')}</p>
                     </div>
                     <div className="skill-group">
-                        <h3>03 / Cloud &amp; delivery</h3>
-                        <p>Microsoft Azure · AWS · Docker · CI/CD · Azure DevOps · Git</p>
+                        <h3>{t('expertise.03CloudDelivery')}</h3>
+                        <p>{t('expertise.microsoftAzureAwsDockerCiCd')}</p>
                     </div>
                     <div className="skill-group">
-                        <h3>04 / Engineering practice</h3>
-                        <p>
-                            Reusable components · SOLID · Domain-driven design · Microservices ·
-                            Jest · PHPUnit · TDD · Code reviews
-                        </p>
+                        <h3>{t('expertise.04EngineeringPractice')}</h3>
+                        <p>{t('expertise.reusableComponentsSolidDomainDrivenDesign')}</p>
                     </div>
                     <div className="skill-group">
-                        <h3>05 / Working together</h3>
-                        <p>
-                            Agile / Scrum · Mentorship · Stakeholder collaboration · AI-assisted
-                            development with systematic review and testing
-                        </p>
+                        <h3>{t('expertise.05WorkingTogether')}</h3>
+                        <p>{t('expertise.agileScrumMentorshipStakeholderCollaborationAi')}</p>
                     </div>
                 </div>
             </div>

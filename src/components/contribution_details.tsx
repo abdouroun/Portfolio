@@ -1,15 +1,15 @@
+import type { TranslationKey } from '../i18n/translate';
+import { useLanguage } from '../i18n/language';
 import { useId, useState } from 'react';
-
 type ContributionDetailsProps = {
-    contributions: readonly string[];
+    contributions: readonly TranslationKey[];
 };
-
 /** Keep the panel mounted so both opening and closing can animate. */
 export function ContributionDetails({ contributions }: ContributionDetailsProps) {
+    const { t } = useLanguage();
     const [is_open, set_is_open] = useState(false);
     const panel_id = useId();
     const button_id = useId();
-
     return (
         <div className="contribution-details">
             <button
@@ -23,7 +23,7 @@ export function ContributionDetails({ contributions }: ContributionDetailsProps)
                 <span className="contribution-chevron" aria-hidden="true">
                     ▶
                 </span>
-                <span>Inside the contribution</span>
+                <span>{t('contributionDetails.insideTheContribution')}</span>
             </button>
             <div
                 id={panel_id}
@@ -36,7 +36,7 @@ export function ContributionDetails({ contributions }: ContributionDetailsProps)
                 <div className="contribution-panel-inner">
                     <ul>
                         {contributions.map((item) => (
-                            <li key={item}>{item}</li>
+                            <li key={item}>{t(item)}</li>
                         ))}
                     </ul>
                 </div>

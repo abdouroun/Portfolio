@@ -1,6 +1,7 @@
+import { useLanguage } from '../i18n/language';
 import { DeveloperScene } from './developer_scene';
-
 export function Hero() {
+    const { t } = useLanguage();
     return (
         <div className="wrap hero">
             <div className="hero-grid">
@@ -8,17 +9,17 @@ export function Hero() {
                     <div className="hero-portrait">
                         <img
                             src="/abdelmouhaimine-portrait.jpg"
-                            alt="Portrait of Abdelmouhaimine Roun"
+                            alt={t('hero.portraitOfAbdelmouhaimineRoun')}
                             width="128"
                             height="128"
                             fetchPriority="high"
                         />
                     </div>
                     <h1 className="hero-name hero-wordmark">
-                        <span className="sr-only">Abdelmouhaimine Roun</span>
+                        <span className="sr-only">{t('hero.abdelmouhaimineRoun')}</span>
                         <img
                             src="/name-wordmark-06.png"
-                            alt=""
+                            alt="projectIllustration.label"
                             aria-hidden="true"
                             width="2172"
                             height="724"
@@ -27,18 +28,17 @@ export function Hero() {
                     </h1>
                     <p className="eyebrow hero-role">
                         <span className="dot" aria-hidden="true" />
-                        Senior Full Stack Developer · Sherbrooke, Canada
+                        {t('hero.seniorFullStackDeveloperSherbrookeCanada')}
                     </p>
                     <p className="hero-signature">
-                        Software, <em>thoughtfully</em> built.
+                        {t('hero.software')}
+                        <em>{t('hero.thoughtfully')}</em>
+                        {t('hero.built')}
                     </p>
-                    <p className="intro">
-                        I turn complex requirements into clear interfaces, reusable systems, and web
-                        platforms built to grow.
-                    </p>
+                    <p className="intro">{t('hero.iTurnComplexRequirementsIntoClear')}</p>
                     <div className="buttons">
                         <a className="button" href="#work">
-                            Explore my work
+                            {t('hero.exploreMyWork')}
                         </a>
                     </div>
                 </div>
@@ -46,23 +46,24 @@ export function Hero() {
             </div>
             <div className="identity">
                 <span>
-                    <strong>React &amp; TypeScript</strong> at the interface.{' '}
-                    <strong>Node.js &amp; cloud</strong> behind it.
+                    <strong>{t('hero.reactTypescript')}</strong>
+                    {t('hero.atTheInterface')} <strong>{t('hero.nodeJsCloud')}</strong>
+                    {t('hero.behindIt')}
                 </span>
-                <span>Engineering · Collaboration · Mentorship</span>
+                <span>{t('hero.engineeringCollaborationMentorship')}</span>
             </div>
             <div className="metrics">
                 <div className="metric">
                     <b>7+</b>
-                    <span>Years building web platforms</span>
+                    <span>{t('hero.yearsBuildingWebPlatforms')}</span>
                 </div>
                 <div className="metric">
                     <b>200k+</b>
-                    <span>Users on a platform I contribute to</span>
+                    <span>{t('hero.usersOnAPlatformIContribute')}</span>
                 </div>
                 <div className="metric">
                     <b>75%</b>
-                    <span>Less time to deliver new forms</span>
+                    <span>{t('hero.lessTimeToDeliverNewForms')}</span>
                 </div>
             </div>
         </div>

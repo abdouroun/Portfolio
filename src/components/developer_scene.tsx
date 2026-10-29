@@ -1,34 +1,34 @@
+import { useLanguage } from '../i18n/language';
 import { useRef, useState, type PointerEvent } from 'react';
-
 const stages = [
     {
         id: 'understand',
-        name: 'Understand',
-        title: 'Start with the right problem.',
-        detail: 'Listen to stakeholders. Clarify needs. Shape the solution together.',
+        name: 'developerScene.understand',
+        title: 'developerScene.startWithTheRightProblem',
+        detail: 'developerScene.listenToStakeholdersClarifyNeedsShape',
     },
     {
         id: 'lead',
-        name: 'Lead',
-        title: 'Help the team move forward.',
-        detail: 'Share context, mentor developers, and make technical decisions together.',
+        name: 'developerScene.lead',
+        title: 'developerScene.helpTheTeamMoveForward',
+        detail: 'developerScene.shareContextMentorDevelopersAndMake',
     },
     {
         id: 'build',
-        name: 'Build',
-        title: 'Turn clarity into working software.',
-        detail: 'Write thoughtful code, review it, and build reusable foundations.',
+        name: 'developerScene.build',
+        title: 'developerScene.turnClarityIntoWorkingSoftware',
+        detail: 'developerScene.writeThoughtfulCodeReviewItAnd',
     },
     {
         id: 'deliver',
-        name: 'Deliver',
-        title: 'Bring the product into people’s hands.',
-        detail: 'Test, refine, and deliver software that meets real business needs.',
+        name: 'developerScene.deliver',
+        title: 'developerScene.bringTheProductIntoPeopleS',
+        detail: 'developerScene.testRefineAndDeliverSoftwareThat',
     },
 ] as const;
-
 /** A conceptual illustration of the developer’s role, not a personal portrait. */
 export function DeveloperScene() {
+    const { t } = useLanguage();
     const [selected, set_selected] = useState(0);
     const canvas = useRef<HTMLDivElement>(null);
     const tilt = (event: PointerEvent<HTMLDivElement>) => {
@@ -57,13 +57,14 @@ export function DeveloperScene() {
             data-stage={stages[selected].id}
             onPointerMove={tilt}
             onPointerLeave={reset_tilt}
-            aria-label="Interactive illustration of a developer coding, understanding needs, leading a team, and delivering a product"
+            aria-label={t('developerScene.interactiveIllustrationOfADeveloperCoding')}
         >
             <div className="architecture-toolbar">
                 <span>
-                    <i /> PEOPLE. PURPOSE. PRODUCT.
+                    <i />
+                    {t('developerScene.peoplePurposeProduct')}
                 </span>
-                <span className="developer-scene-index">AR / 01</span>
+                <span className="developer-scene-index">{t('developerScene.ar01')}</span>
             </div>
             <div className="architecture-canvas" ref={canvas}>
                 <svg viewBox="0 0 480 420" className="developer-svg" aria-hidden="true">
@@ -105,7 +106,7 @@ export function DeveloperScene() {
                         <rect x="24" y="45" width="128" height="77" rx="8" />
                         <path d="M39 65h20v14H48l-6 5v-5h-3Z" fill="#dce9aa" stroke="#5c7f55" />
                         <text x="67" y="74">
-                            THE NEED
+                            {t('developerScene.theNeed')}
                         </text>
                         <path d="M39 97h96m-96 8h72" stroke="#9eb28f" strokeWidth="2" />
                         <circle cx="134" cy="61" r="3" fill="#799950" />
@@ -113,7 +114,7 @@ export function DeveloperScene() {
                     <g className="developer-card card-deliver">
                         <rect x="335" y="61" width="123" height="78" rx="8" />
                         <text x="349" y="82">
-                            PRODUCT
+                            {t('developerScene.product')}
                         </text>
                         <rect
                             x="349"
@@ -289,7 +290,7 @@ export function DeveloperScene() {
                     <g className="developer-card card-lead">
                         <rect x="22" y="324" width="142" height="73" rx="8" />
                         <text x="37" y="345">
-                            ONE TEAM
+                            {t('developerScene.oneTeam')}
                         </text>
                         <g fill="#dce9aa" stroke="#749365">
                             <circle cx="48" cy="365" r="7" />
@@ -306,7 +307,7 @@ export function DeveloperScene() {
                     <g className="developer-card card-build">
                         <rect x="336" y="321" width="122" height="77" rx="8" />
                         <text x="350" y="342">
-                            DELIVERY PLAN
+                            {t('developerScene.deliveryPlan')}
                         </text>
                         <g fill="#aec899">
                             <rect x="350" y="354" width="26" height="7" rx="3" />
@@ -331,7 +332,10 @@ export function DeveloperScene() {
                 </svg>
             </div>
             <div className="architecture-bottom">
-                <div className="architecture-tabs" aria-label="Explore my approach to software">
+                <div
+                    className="architecture-tabs"
+                    aria-label={t('developerScene.exploreMyApproachToSoftware')}
+                >
                     {stages.map((stage, index) => (
                         <button
                             type="button"
@@ -339,13 +343,13 @@ export function DeveloperScene() {
                             aria-pressed={selected === index}
                             onClick={() => set_selected(index)}
                         >
-                            {stage.name}
+                            {t(stage.name)}
                         </button>
                     ))}
                 </div>
                 <div className="architecture-caption" key={selected} aria-live="polite">
-                    <strong>{stages[selected].title}</strong>
-                    <p>{stages[selected].detail}</p>
+                    <strong>{t(stages[selected].title)}</strong>
+                    <p>{t(stages[selected].detail)}</p>
                 </div>
             </div>
         </div>

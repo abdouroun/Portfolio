@@ -1,17 +1,17 @@
+import { LanguageSwitch } from './language_switch';
+import { useLanguage } from '../i18n/language';
 import { useEffect, useState } from 'react';
-
 const navigation = [
-    { id: 'work', label: 'Work' },
-    { id: 'experience', label: 'Experience' },
-    { id: 'expertise', label: 'Expertise' },
-    { id: 'education', label: 'Education' },
-];
-
+    { id: 'work', label: 'header.work' },
+    { id: 'experience', label: 'header.experience' },
+    { id: 'expertise', label: 'header.expertise' },
+    { id: 'education', label: 'header.education' },
+] as const;
 export function Header() {
+    const { t } = useLanguage();
     const [menu_open, set_menu_open] = useState(false);
     const [active_section, set_active_section] = useState('');
     const [progress, set_progress] = useState(0);
-
     useEffect(() => {
         const update_progress = () => {
             const max_scroll = document.documentElement.scrollHeight - window.innerHeight;
@@ -40,15 +40,19 @@ export function Header() {
             window.removeEventListener('keydown', close_on_escape);
         };
     }, []);
-
     return (
         <header>
             <a className="skip-link" href="#main-content">
-                Skip to content
+                {t('header.skipToContent')}
             </a>
             <div className="wrap nav">
-                <a className="mark" href="#" aria-label="Abdelmouhaimine Roun home">
-                    <img src="/ar-transparent.png" alt="" width="64" height="64" />
+                <a className="mark" href="#" aria-label={t('header.abdelmouhaimineRounHome')}>
+                    <img
+                        src="/ar-transparent.png"
+                        alt="projectIllustration.label"
+                        width="64"
+                        height="64"
+                    />
                 </a>
                 <button
                     id="menu-toggle"
@@ -58,12 +62,12 @@ export function Header() {
                     aria-controls="main-navigation"
                     onClick={() => set_menu_open(!menu_open)}
                 >
-                    {menu_open ? 'Close ×' : 'Menu +'}
+                    {t(menu_open ? 'header.close' : 'header.menu')}
                 </button>
                 <nav
                     id="main-navigation"
                     className={menu_open ? 'is-open' : ''}
-                    aria-label="Main navigation"
+                    aria-label={t('header.mainNavigation')}
                 >
                     {navigation.map(({ id, label }) => (
                         <a
@@ -72,7 +76,7 @@ export function Header() {
                             aria-current={active_section === id ? 'location' : undefined}
                             onClick={() => set_menu_open(false)}
                         >
-                            {label}
+                            {t(label)}
                         </a>
                     ))}
                     <a
@@ -80,9 +84,10 @@ export function Header() {
                         href="mailto:abdouroun@gmail.com"
                         onClick={() => set_menu_open(false)}
                     >
-                        Let’s talk
+                        {t('header.letSTalk')}
                     </a>
                 </nav>
+                <LanguageSwitch />
             </div>
             <div
                 className="reading-progress"

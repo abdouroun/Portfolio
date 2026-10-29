@@ -1,46 +1,48 @@
+import { useLanguage } from '../i18n/language';
 import { ProjectIllustration } from './project_illustration';
 import { ContributionDetails } from './contribution_details';
 import { projects } from '../data/projects';
-
 export function SelectedWork() {
+    const { t } = useLanguage();
     return (
         <section id="work" aria-labelledby="work-title">
             <div className="section-head">
                 <div>
-                    <div className="kicker">01 — SELECTED CONTRIBUTIONS</div>
-                    <h2 id="work-title">Complexity, made useful.</h2>
+                    <div className="kicker">{t('selectedWork.01SelectedContributions')}</div>
+                    <h2 id="work-title">{t('selectedWork.complexityMadeUseful')}</h2>
                 </div>
                 <p>
-                    Real challenges. Practical engineering.
-                    <br />A selection of work delivered with my teams.
+                    {t('selectedWork.realChallengesPracticalEngineering')}
+                    <br />
+                    {t('selectedWork.aSelectionOfWorkDeliveredWith')}
                 </p>
             </div>
             {projects.map((project) => (
                 <article className="project" key={project.id}>
                     <div className={`project-art${project.dark ? ' dark' : ''}`}>
-                        <span className="project-number">{project.number}</span>
+                        <span className="project-number">{t(project.number)}</span>
                         <h3>
                             {project.headline.map((line, index) => (
                                 <span className="headline-line" key={index}>
-                                    {line}
+                                    {t(line)}
                                 </span>
                             ))}
                         </h3>
                         <ProjectIllustration kind={project.id} />
-                        <span className="art-caption">{project.caption}</span>
+                        <span className="art-caption">{t(project.caption)}</span>
                     </div>
                     <div className="project-content">
-                        <div className="eyebrow">{project.role}</div>
-                        <h3>{project.title}</h3>
-                        <p>{project.description}</p>
+                        <div className="eyebrow">{t(project.role)}</div>
+                        <h3>{t(project.title)}</h3>
+                        <p>{t(project.description)}</p>
                         <div className="tags">
                             {project.tags.map((tag) => (
-                                <span key={tag}>{tag}</span>
+                                <span key={tag}>{t(tag)}</span>
                             ))}
                         </div>
                         <div className="result">
-                            <strong>{project.result}</strong>
-                            {project.resultDetail}
+                            <strong>{t(project.result)}</strong>
+                            {t(project.resultDetail)}
                         </div>
                         <ContributionDetails contributions={project.contributions} />
                         <a
@@ -48,7 +50,9 @@ export function SelectedWork() {
                             href={project.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label={`Visit ${project.linkLabel} (opens in a new tab)`}
+                            aria-label={t('selectedWork.visitSiteOpensInANew', {
+                                site: project.linkLabel,
+                            })}
                         >
                             <svg
                                 width="14"

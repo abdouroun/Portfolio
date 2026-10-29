@@ -1,18 +1,20 @@
+import { useLanguage } from '../i18n/language';
 export function Contact() {
+    const { t } = useLanguage();
     return (
         <div className="contact" id="contact">
             <div className="contact-panel">
                 <div>
-                    <div className="kicker">05 — LET’S CONNECT</div>
+                    <div className="kicker">{t('contact.05LetSConnect')}</div>
                     <h2>
-                        Have something
+                        {t('contact.haveSomething')}
                         <br />
-                        meaningful to build?
+                        {t('contact.meaningfulToBuild')}
                     </h2>
-                    <p>Let’s talk about your product, your team, and the next challenge.</p>
+                    <p>{t('contact.letSTalkAboutYourProduct')}</p>
                 </div>
                 <a className="button" href="mailto:abdouroun@gmail.com">
-                    Get in touch
+                    {t('contact.getInTouch')}
                 </a>
             </div>
         </div>

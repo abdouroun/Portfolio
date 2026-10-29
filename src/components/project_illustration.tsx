@@ -1,14 +1,16 @@
-type ProjectIllustrationProps = { kind: 'citizen-services' | 'accounting-saas' };
-
+import { useLanguage } from '../i18n/language';
+type ProjectIllustrationProps = {
+    kind: 'citizen-services' | 'accounting-saas';
+};
 export function ProjectIllustration({ kind }: ProjectIllustrationProps) {
+    const { t } = useLanguage();
     const citizen = kind === 'citizen-services';
     const label = citizen
-        ? 'Illustration of citizens connected to a form, progressing through fields to validation'
-        : 'Illustrative accounting dashboard with financial trends, balance sheet rows, and chart bars';
-
+        ? 'projectIllustration.illustrationOfCitizensConnectedToA'
+        : 'projectIllustration.illustrativeAccountingDashboardWithFinancialTrends';
     return (
         <div className={`project-illustration ${citizen ? 'citizen-scene' : 'finance-scene'}`}>
-            <svg viewBox="0 0 300 210" role="img" aria-label={label}>
+            <svg viewBox="0 0 300 210" role="img" aria-label={t(label)}>
                 {citizen ? (
                     <g>
                         <path
@@ -57,10 +59,10 @@ export function ProjectIllustration({ kind }: ProjectIllustrationProps) {
                             <path d="M100 45h156" stroke="var(--art-line)" />
                             <circle cx="113" cy="29" r="2" fill="var(--art-ink)" />
                             <text x="124" y="32">
-                                CITIZEN REQUEST
+                                {t('projectIllustration.citizenRequest')}
                             </text>
                             <text x="114" y="62" className="form-field-label">
-                                Your details
+                                {t('projectIllustration.yourDetails')}
                             </text>
                             <rect
                                 x="114"
@@ -78,7 +80,7 @@ export function ProjectIllustration({ kind }: ProjectIllustrationProps) {
                                 strokeWidth="2"
                             />
                             <text x="114" y="108" className="form-field-label">
-                                Your request
+                                {t('projectIllustration.yourRequest')}
                             </text>
                             <rect
                                 x="114"
@@ -104,7 +106,7 @@ export function ProjectIllustration({ kind }: ProjectIllustrationProps) {
                                 fill="var(--art-ink)"
                             />
                             <text x="157" y="172" textAnchor="middle" className="form-submit">
-                                Submit request
+                                {t('projectIllustration.submitRequest')}
                             </text>
                             <g className="form-success">
                                 <circle
@@ -139,7 +141,7 @@ export function ProjectIllustration({ kind }: ProjectIllustrationProps) {
                         <path d="M12 42h276M51 42v153" stroke="var(--art-line)" />
                         <circle cx="27" cy="28" r="3" fill="var(--art-accent)" />
                         <text x="40" y="31">
-                            FINANCIAL OVERVIEW
+                            {t('projectIllustration.financialOverview')}
                         </text>
                         <g stroke="var(--art-line)" strokeWidth="2">
                             <path d="M26 60h11m-11 15h11m-11 15h11" />
@@ -154,7 +156,7 @@ export function ProjectIllustration({ kind }: ProjectIllustrationProps) {
                             stroke="var(--art-line)"
                         />
                         <text x="73" y="67">
-                            CASH FLOW
+                            {t('projectIllustration.cashFlow')}
                         </text>
                         <path
                             d="M73 111h85M73 95h85M73 79h85"
@@ -179,7 +181,7 @@ export function ProjectIllustration({ kind }: ProjectIllustrationProps) {
                             stroke="var(--art-line)"
                         />
                         <text x="188" y="67">
-                            BALANCE
+                            {t('projectIllustration.balance')}
                         </text>
                         {[0, 1, 2, 3, 4].map((index) => (
                             <rect
@@ -194,10 +196,10 @@ export function ProjectIllustration({ kind }: ProjectIllustrationProps) {
                             />
                         ))}
                         <text x="65" y="140">
-                            BALANCE SHEET
+                            {t('projectIllustration.balanceSheet')}
                         </text>
                         <text x="222" y="140" className="ledger-heading">
-                            DR / CR
+                            {t('projectIllustration.drCr')}
                         </text>
                         {[151, 164, 177].map((y, index) => (
                             <g key={y} className={`ledger-row ledger-${index}`}>
@@ -213,7 +215,10 @@ export function ProjectIllustration({ kind }: ProjectIllustrationProps) {
                 )}
             </svg>
             <div className="project-illustration-footer">
-                <span>Illustration{citizen ? '' : ' · sample data'}</span>
+                <span>
+                    {t('projectIllustration.illustration')}
+                    {citizen ? '' : t('projectIllustration.sampleData')}
+                </span>
             </div>
         </div>
     );

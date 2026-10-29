@@ -1,22 +1,23 @@
+import { useLanguage } from '../i18n/language';
 const certifications = [
     { name: 'SAFe® 6 Practitioner', issuer: 'Scaled Agile' },
     { name: 'Google AI Essentials', issuer: 'Google' },
     { name: 'Google AI Professional Certificate', issuer: 'Google' },
 ];
-
 export function Learning() {
+    const { t } = useLanguage();
     return (
         <section id="education" className="learning" aria-labelledby="learning-title">
             <div className="section-head">
                 <div>
-                    <div className="kicker">04 — EDUCATION & CERTIFICATIONS</div>
+                    <div className="kicker">{t('learning.04EducationCertifications')}</div>
                     <h2 id="learning-title" className="learning-title">
-                        Engineering foundation.
+                        {t('learning.engineeringFoundation')}
                         <br />
-                        Continuous learning.
+                        {t('learning.continuousLearning')}
                     </h2>
                 </div>
-                <p>A foundation in computer systems, with a continuing focus on AI and delivery.</p>
+                <p>{t('learning.aFoundationInComputerSystemsWith')}</p>
             </div>
             <div className="learning-grid">
                 <div className="learning-card">
@@ -36,23 +37,23 @@ export function Learning() {
                                 <path d="M6 11v6c4 3 8 3 12 0v-6M22 9v7" />
                             </svg>
                         </span>
-                        <h4>Education</h4>
+                        <h4>{t('header.education')}</h4>
                     </div>
                     <ol className="degree-list">
                         <li>
                             <span className="degree-year">2016–2019</span>
-                            <h5>Bachelor’s degree in Network & Information Systems Engineering</h5>
-                            <p>Faculty of Sciences and Techniques · Morocco</p>
+                            <h5>{t('learning.bachelorSDegreeInNetworkInformation')}</h5>
+                            <p>{t('learning.facultyOfSciencesAndTechniquesMorocco')}</p>
                             <span className="degree-equivalence">
-                                MIFI equivalency: Bachelor’s in Computer Engineering
+                                {t('learning.mifiEquivalencyBachelorSInComputer')}
                             </span>
                         </li>
                         <li>
                             <span className="degree-year">2014–2016</span>
-                            <h5>University Technology Diploma (DUT) in Computer Science</h5>
-                            <p>Higher School of Technology · Morocco</p>
+                            <h5>{t('learning.universityTechnologyDiplomaDutInComputer')}</h5>
+                            <p>{t('learning.higherSchoolOfTechnologyMorocco')}</p>
                             <span className="degree-equivalence">
-                                MIFI equivalency: DEC in Computer Science
+                                {t('learning.mifiEquivalencyDecInComputerScience')}
                             </span>
                         </li>
                     </ol>
@@ -62,7 +63,7 @@ export function Learning() {
                         <span className="learning-icon" aria-hidden="true">
                             ✧
                         </span>
-                        <h4>Certifications</h4>
+                        <h4>{t('learning.certifications')}</h4>
                     </div>
                     <ul className="certification-list">
                         {certifications.map(({ name, issuer }) => (
@@ -80,27 +81,27 @@ export function Learning() {
                     <div className="learning-in-progress">
                         <span className="progress-label">
                             <span />
-                            In progress
+                            {t('learning.inProgress')}
                         </span>
-                        <p>Google Project Management Professional Certificate</p>
-                        <p>AI-Assisted Front-End Development · Codecademy</p>
+                        <p>{t('learning.googleProjectManagementProfessionalCertificate')}</p>
+                        <p>{t('learning.aiAssistedFrontEndDevelopmentCodecademy')}</p>
                     </div>
                 </div>
             </div>
             <div className="languages">
-                <h4>Languages</h4>
+                <h4>{t('learning.languages')}</h4>
                 <ul>
                     <li>
-                        <strong>French</strong>
-                        <span>Bilingual</span>
+                        <strong>{t('learning.french')}</strong>
+                        <span>{t('learning.bilingual')}</span>
                     </li>
                     <li>
-                        <strong>English</strong>
-                        <span>Professional</span>
+                        <strong>{t('languageSwitch.english')}</strong>
+                        <span>{t('learning.professional')}</span>
                     </li>
                     <li>
-                        <strong>Arabic</strong>
-                        <span>Native</span>
+                        <strong>{t('learning.arabic')}</strong>
+                        <span>{t('learning.native')}</span>
                     </li>
                 </ul>
             </div>
