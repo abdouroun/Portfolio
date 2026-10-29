@@ -29,10 +29,7 @@ export function Hero() {
                     </p>
                     <div className="buttons">
                         <a className="button" href="#work">
-                            Explore my work <span>↘</span>
-                        </a>
-                        <a className="textlink" download="" href="Abdelmouhaimine-Roun-CV.pdf">
-                            Download CV ↓
+                            Explore my work
                         </a>
                     </div>
                 </div>

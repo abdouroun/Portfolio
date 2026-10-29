@@ -1728,15 +1728,6 @@ nav {
     color: var(--art-ink);
     opacity: 0.75;
 }
-.project-illustration-footer button {
-    border: 1px solid var(--art-line);
-    background: transparent;
-    color: inherit;
-    border-radius: 20px;
-    font: inherit;
-    padding: 3px 8px;
-    cursor: pointer;
-}
 .project-external-link {
     display: inline-flex;
     align-items: center;
@@ -1797,9 +1788,6 @@ nav {
 }
 .ledger-2 {
     animation-delay: 0.6s;
-}
-.project-illustration[data-paused='true'] * {
-    animation-play-state: paused !important;
 }
 @keyframes fill-form {
     0%,

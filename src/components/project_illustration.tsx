@@ -1,19 +1,13 @@
-import { useState } from 'react';
-
 type ProjectIllustrationProps = { kind: 'citizen-services' | 'accounting-saas' };
 
 export function ProjectIllustration({ kind }: ProjectIllustrationProps) {
-    const [paused, set_paused] = useState(false);
     const citizen = kind === 'citizen-services';
     const label = citizen
         ? 'Illustration of citizens connected to a form, progressing through fields to validation'
         : 'Illustrative accounting dashboard with financial trends, balance sheet rows, and chart bars';
 
     return (
-        <div
-            className={`project-illustration ${citizen ? 'citizen-scene' : 'finance-scene'}`}
-            data-paused={paused}
-        >
+        <div className={`project-illustration ${citizen ? 'citizen-scene' : 'finance-scene'}`}>
             <svg viewBox="0 0 300 210" role="img" aria-label={label}>
                 {citizen ? (
                     <g>
@@ -220,14 +214,6 @@ export function ProjectIllustration({ kind }: ProjectIllustrationProps) {
             </svg>
             <div className="project-illustration-footer">
                 <span>Illustration{citizen ? '' : ' · sample data'}</span>
-                <button
-                    type="button"
-                    aria-pressed={paused}
-                    aria-label={`${paused ? 'Resume' : 'Pause'} ${citizen ? 'citizen form' : 'financial dashboard'} animation`}
-                    onClick={() => set_paused(!paused)}
-                >
-                    {paused ? 'Play' : 'Pause'}
-                </button>
             </div>
         </div>
     );

@@ -12,7 +12,7 @@ export function Contact() {
                     <p>Let’s talk about your product, your team, and the next challenge.</p>
                 </div>
                 <a className="button" href="mailto:abdouroun@gmail.com">
-                    Get in touch <span>↗</span>
+                    Get in touch
                 </a>
             </div>
         </div>

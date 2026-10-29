@@ -80,7 +80,7 @@ export function Header() {
                         href="mailto:abdouroun@gmail.com"
                         onClick={() => set_menu_open(false)}
                     >
-                        Let’s talk ↗
+                        Let’s talk
                     </a>
                 </nav>
             </div>
