@@ -1992,8 +1992,8 @@ nav {
 
 /* A compact portrait brings a face to the name without replacing the illustration. */
 .hero-portrait {
-    width: 128px;
-    height: 128px;
+    width: 120px;
+    height: 120px;
     margin-bottom: 25px;
     padding: 0;
     overflow: hidden;
@@ -2009,17 +2009,26 @@ nav {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center 15%;
-    transform: scale(1.45);
+    object-position: center 28%;
+    transform: scale(1.1);
     border-radius: 50%;
 }
-@media (max-width: 650px) {
+@media (max-width: 900px) {
     .hero-portrait {
-        width: 112px;
-        height: 112px;
+        width: 110px;
+        height: 110px;
         margin-bottom: 24px;
     }
 }
+@media (max-width: 650px) {
+    .hero-portrait {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 24px;
+    }
+}
+
+
 @media (prefers-reduced-motion: reduce) {
     .hero-portrait {
         animation: none;
