@@ -162,46 +162,55 @@ export function DeveloperScene() {
                             strokeWidth="1.5"
                             fill="none"
                         />
-                        <path d="M147 192v15q7 8 16 1l1-16Z" fill="#c99c7b" />
-                        <path
-                            d="M140 165q5-15 20-13 18 1 17 21l-1 7 5 7-6 3q-2 12-14 13-17 0-21-20Z"
-                            fill="#d7ad8b"
-                        />
-                        <path
-                            d="M139 184q-10-12-5-25 4-14 20-14 20-1 25 15l-7 4-5-9q-10 10-24 9l-1 18Z"
-                            fill="#243c2e"
-                        />
-                        <ellipse cx="141" cy="182" rx="4" ry="6" fill="#d7ad8b" />
-                        <path d="M140 181q3-2 3 3" fill="none" stroke="#b78766" strokeWidth="1" />
-                        <g
-                            fill="#e7eddb"
-                            fillOpacity=".25"
-                            stroke="#294934"
-                            strokeWidth="1.4"
-                            strokeLinejoin="round"
-                        >
-                            <rect x="146" y="175" width="11" height="9" rx="2.5" />
-                            <rect x="161" y="174" width="13" height="10" rx="2.5" />
-                            <path d="M157 179q2-2 4 0m-15-1-5-1" fill="none" />
+                        <g className="developer-face">
+                            <path d="M148 193v14q7 7 15 0v-15Z" fill="#c99c7b" />
+                            <path
+                                d="M139 166c0-12 8-17 18-17s17 8 17 19v11l3 6-4 2v6c-2 7-8 11-15 10-12-1-19-10-19-23Z"
+                                fill="#d7ad8b"
+                            />
+                            <path
+                                d="M138 180c-7-5-8-16-3-24 4-8 12-12 21-11 12 0 20 7 20 18-6 0-10-3-13-7-5 7-13 10-22 10v14Z"
+                                fill="#243c2e"
+                            />
+                            <ellipse cx="139" cy="182" rx="4" ry="5.5" fill="#d7ad8b" />
+                            <path
+                                d="M138 181q3-2 3 3"
+                                fill="none"
+                                stroke="#b78766"
+                                strokeWidth=".8"
+                                strokeLinecap="round"
+                            />
+                            <g
+                                fill="none"
+                                stroke="#2b4936"
+                                strokeWidth="1.2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            >
+                                <rect x="145" y="174" width="12" height="9" rx="3" />
+                                <rect x="160" y="174" width="12" height="9" rx="3" />
+                                <path d="M157 178h3m-15-1-5-1" />
+                            </g>
+                            <g fill="#2b4936">
+                                <circle cx="152" cy="178.5" r=".85" />
+                                <circle cx="167" cy="178.5" r=".85" />
+                            </g>
+                            <path
+                                d="m163 183-1 5h3"
+                                fill="none"
+                                stroke="#b28161"
+                                strokeWidth=".9"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            />
+                            <path
+                                d="M158 193q5 3 9-.5"
+                                fill="none"
+                                stroke="#95664c"
+                                strokeWidth="1"
+                                strokeLinecap="round"
+                            />
                         </g>
-                        <g fill="#294934">
-                            <circle cx="152" cy="179" r="1" />
-                            <circle cx="167" cy="179" r="1" />
-                        </g>
-                        <path
-                            d="m147 171 8-1m8 0h7"
-                            fill="none"
-                            stroke="#37523b"
-                            strokeWidth="1.2"
-                            strokeLinecap="round"
-                        />
-                        <path
-                            d="M163 191q4 3 8-1"
-                            fill="none"
-                            stroke="#9d6c50"
-                            strokeWidth="1.2"
-                            strokeLinecap="round"
-                        />
                         <path
                             d="M165 228 177 247q3 6 12 7l31 2"
                             fill="none"
