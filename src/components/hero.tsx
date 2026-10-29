@@ -9,8 +9,8 @@ export function Hero() {
                         <img
                             src="/abdelmouhaimine-portrait.jpg"
                             alt="Portrait of Abdelmouhaimine Roun"
-                            width="104"
-                            height="104"
+                            width="128"
+                            height="128"
                             fetchPriority="high"
                         />
                     </div>
