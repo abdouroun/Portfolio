@@ -1,3 +1,5 @@
+import { ArchitectureScene } from './architecture_scene';
+
 export function Hero() {
     return (
         <div className="wrap hero">
@@ -26,23 +28,7 @@ export function Hero() {
                         </a>
                     </div>
                 </div>
-                <div
-                    aria-label="Abstract interconnected modules representing reusable software architecture"
-                    className="visual"
-                    role="img"
-                >
-                    <div className="grid"></div>
-                    <div className="orbit"></div>
-                    <div className="orbit two"></div>
-                    <div className="orbit three"></div>
-                    <div className="core">{'</>'}</div>
-                    <span className="chip one">Interfaces with intent</span>
-                    <span className="chip two">Architecture that scales</span>
-                    <div className="visual-label">
-                        <span>THINK. BUILD. REFINE.</span>
-                        <span>01 / AR</span>
-                    </div>
-                </div>
+                <ArchitectureScene />
             </div>
             <div className="identity">
                 <span>

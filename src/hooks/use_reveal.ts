@@ -5,7 +5,7 @@ export function useReveal() {
     useEffect(() => {
         const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
         const targets = document.querySelectorAll<HTMLElement>(
-            '.section-head, .project, .experience-row, .about-grid, .principle, .contact-panel',
+            '.section-head, .project, .experience-row, .about-grid, .principle, .contact-panel, .learning-card, .skill-group',
         );
         if (!('IntersectionObserver' in window) || preference.matches) return;
 
