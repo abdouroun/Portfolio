@@ -5,6 +5,15 @@ export function Hero() {
         <div className="wrap hero">
             <div className="hero-grid">
                 <div>
+                    <div className="hero-portrait">
+                        <img
+                            src="/abdelmouhaimine-portrait.jpg"
+                            alt="Portrait of Abdelmouhaimine Roun"
+                            width="104"
+                            height="104"
+                            fetchPriority="high"
+                        />
+                    </div>
                     <h1 className="hero-name hero-wordmark">
                         <span className="sr-only">Abdelmouhaimine Roun</span>
                         <img

@@ -1989,3 +1989,36 @@ nav {
         stroke-dashoffset: 0;
     }
 }
+
+/* A compact portrait brings a face to the name without replacing the illustration. */
+.hero-portrait {
+    width: 104px;
+    height: 104px;
+    margin-bottom: 25px;
+    padding: 4px;
+    border: 1px solid #b5c7a5;
+    border-radius: 50%;
+    background: #f5f4ee;
+    box-shadow: 0 0 0 6px #e7eddf;
+    animation: enter 800ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.hero-portrait img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 35%;
+    border-radius: 50%;
+}
+@media (max-width: 650px) {
+    .hero-portrait {
+        width: 88px;
+        height: 88px;
+        margin-bottom: 24px;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .hero-portrait {
+        animation: none;
+    }
+}
