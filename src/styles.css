@@ -1873,3 +1873,119 @@ nav {
         transform: none;
     }
 }
+
+/* Human-centered process illustration. */
+.developer-svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
+.developer-scene-index {
+    font-size: 8px !important;
+    opacity: 0.6;
+}
+.developer-card {
+    animation: developer-card-float 7s ease-in-out infinite;
+    transition: opacity 350ms;
+}
+.developer-card > rect {
+    fill: #f5f7ee;
+    stroke: #b2c4a3;
+    stroke-width: 1px;
+}
+.developer-card text {
+    font: 8px monospace;
+    letter-spacing: 1px;
+    fill: #4f7146;
+}
+.card-deliver {
+    animation-delay: -2s;
+}
+.card-lead {
+    animation-delay: -4s;
+}
+.card-build {
+    animation-delay: -6s;
+}
+.developer-scene[data-stage='understand'] .card-understand > rect,
+.developer-scene[data-stage='lead'] .card-lead > rect,
+.developer-scene[data-stage='build'] .card-build > rect,
+.developer-scene[data-stage='deliver'] .card-deliver > rect {
+    stroke: #497644;
+    stroke-width: 2;
+}
+.developer-routes {
+    animation: developer-flow 20s linear infinite;
+}
+.developer-orbit {
+    animation: developer-flow 60s linear infinite;
+}
+.developer-code {
+    stroke-dasharray: 120;
+    animation: developer-typing 7s ease infinite;
+}
+.developer-cursor {
+    animation: developer-blink 1.1s step-end infinite;
+}
+.developer-progress {
+    stroke-dasharray: 90;
+    animation: developer-deliver 7s ease infinite;
+}
+.developer-steam {
+    animation: developer-breathe 4s ease-in-out infinite;
+}
+@keyframes developer-card-float {
+    0%,
+    100% {
+        translate: 0 0;
+    }
+    50% {
+        translate: 0 -4px;
+    }
+}
+@keyframes developer-flow {
+    to {
+        stroke-dashoffset: -100;
+    }
+}
+@keyframes developer-typing {
+    0%,
+    100% {
+        stroke-dashoffset: 80;
+    }
+    55%,
+    90% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes developer-blink {
+    50% {
+        opacity: 0;
+    }
+}
+@keyframes developer-deliver {
+    0%,
+    100% {
+        stroke-dashoffset: 75;
+    }
+    70%,
+    90% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes developer-breathe {
+    50% {
+        opacity: 0.3;
+        translate: 0 -3px;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .developer-scene * {
+        animation: none !important;
+    }
+    .developer-code,
+    .developer-progress {
+        stroke-dashoffset: 0;
+    }
+}

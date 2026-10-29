@@ -1,4 +1,4 @@
-import { ArchitectureScene } from './architecture_scene';
+import { DeveloperScene } from './developer_scene';
 
 export function Hero() {
     return (
@@ -33,7 +33,7 @@ export function Hero() {
                         </a>
                     </div>
                 </div>
-                <ArchitectureScene />
+                <DeveloperScene />
             </div>
             <div className="identity">
                 <span>
