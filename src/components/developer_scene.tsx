@@ -147,35 +147,77 @@ export function DeveloperScene() {
                             strokeWidth="4"
                             strokeLinecap="round"
                         />
-                        <path d="M162 271h41l-4 43h-17l-1-25h-19" fill="#293f33" />
-                        <path d="M181 313h19l8 7h-29Z" fill="#203429" />
-                        <path d="M131 226q1-21 20-26l21 4q18 7 22 28l-7 41h-55Z" fill="#397454" />
-                        <path d="M145 198v13q10 8 19 0v-17" fill="#c99c7b" />
-                        <ellipse cx="155" cy="179" rx="20" ry="25" fill="#d7ad8b" />
+                        {/* Seated three-quarter pose, with glasses following the face. */}
+                        <path d="M141 267h42q14 0 17 11l7 32h-14l-10-27h-41Z" fill="#354e3d" />
+                        <path d="M146 275h32q10 0 10 10l-3 29h-14l-2-28h-23Z" fill="#273e30" />
+                        <path d="M171 311h15l9 8h-26q-2-3 2-8Z" fill="#1f3428" />
+                        <path d="M193 307h14l12 9h-25q-4-2-1-9Z" fill="#243b2d" />
                         <path
-                            d="M135 183q-13-30 11-34 31-9 32 18l-10-1-4-9q-13 12-26 11l2 18Z"
+                            d="M132 225q2-17 14-21l13-3 14 7q13 6 15 24l-3 40h-51Z"
+                            fill="#397454"
+                        />
+                        <path
+                            d="M144 238q-3 17 0 31m33-29-2 30"
+                            stroke="#2c6246"
+                            strokeWidth="1.5"
+                            fill="none"
+                        />
+                        <path d="M147 192v15q7 8 16 1l1-16Z" fill="#c99c7b" />
+                        <path
+                            d="M140 165q5-15 20-13 18 1 17 21l-1 7 5 7-6 3q-2 12-14 13-17 0-21-20Z"
+                            fill="#d7ad8b"
+                        />
+                        <path
+                            d="M139 184q-10-12-5-25 4-14 20-14 20-1 25 15l-7 4-5-9q-10 10-24 9l-1 18Z"
                             fill="#243c2e"
                         />
-                        <path
-                            d="M174 178h8m-28-2h13v8h-13Zm-18 0h13v8h-13Zm13 3h5"
-                            fill="none"
+                        <ellipse cx="141" cy="182" rx="4" ry="6" fill="#d7ad8b" />
+                        <path d="M140 181q3-2 3 3" fill="none" stroke="#b78766" strokeWidth="1" />
+                        <g
+                            fill="#e7eddb"
+                            fillOpacity=".25"
                             stroke="#294934"
-                            strokeWidth="1.5"
-                        />
+                            strokeWidth="1.4"
+                            strokeLinejoin="round"
+                        >
+                            <rect x="146" y="175" width="11" height="9" rx="2.5" />
+                            <rect x="161" y="174" width="13" height="10" rx="2.5" />
+                            <path d="M157 179q2-2 4 0m-15-1-5-1" fill="none" />
+                        </g>
+                        <g fill="#294934">
+                            <circle cx="152" cy="179" r="1" />
+                            <circle cx="167" cy="179" r="1" />
+                        </g>
                         <path
-                            d="M169 189q-5 5-10 2"
+                            d="m147 171 8-1m8 0h7"
                             fill="none"
-                            stroke="#a76d50"
+                            stroke="#37523b"
+                            strokeWidth="1.2"
                             strokeLinecap="round"
                         />
                         <path
-                            d="M165 225q6 25 29 31l29-1"
+                            d="M163 191q4 3 8-1"
+                            fill="none"
+                            stroke="#9d6c50"
+                            strokeWidth="1.2"
+                            strokeLinecap="round"
+                        />
+                        <path
+                            d="M165 228 177 247q3 6 12 7l31 2"
+                            fill="none"
+                            stroke="#c99c7b"
+                            strokeWidth="9"
+                            strokeLinecap="round"
+                        />
+                        <path
+                            d="M170 226 181 243q3 5 10 6l33 5"
                             fill="none"
                             stroke="#d7ad8b"
-                            strokeWidth="12"
+                            strokeWidth="10"
                             strokeLinecap="round"
                         />
-                        <path d="M164 218q8 9 9 18" stroke="#397454" strokeWidth="19" fill="none" />
+                        <path d="m160 216 8-1q10 6 12 19l-14 5q-8-11-6-23Z" fill="#438360" />
+                        <path d="m222 250 9 3 3 5-14-1" fill="#d7ad8b" />
                         <path d="M118 265h260v8H118Z" fill="#728e62" />
                         <path d="M131 273v46m232-46v46" stroke="#809d6d" strokeWidth="5" />
                         <path
