@@ -5,9 +5,16 @@ export function Hero() {
         <div className="wrap hero">
             <div className="hero-grid">
                 <div>
-                    <h1 className="hero-name">
-                        <span>Abdelmouhaimine </span>
-                        <span className="hero-surname">Roun</span>
+                    <h1 className="hero-name hero-wordmark">
+                        <span className="sr-only">Abdelmouhaimine Roun</span>
+                        <img
+                            src="/name-wordmark-06.png"
+                            alt=""
+                            aria-hidden="true"
+                            width="2172"
+                            height="724"
+                            fetchPriority="high"
+                        />
                     </h1>
                     <p className="eyebrow hero-role">
                         <span className="dot" aria-hidden="true" />
