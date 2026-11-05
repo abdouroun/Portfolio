@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import { Header } from './components/header';
 import { Hero } from './components/hero';
 import { SelectedWork } from './components/selected_work';
@@ -24,6 +25,7 @@ export default function App() {
                     <Footer />
                 </div>
             </main>
+            <Analytics />
         </>
     );
 }
